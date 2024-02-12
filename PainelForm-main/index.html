@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <title>Painel Cadastro</title>
+</head>
+
+<body>
+  <main class="container">
+
+    <div class="box-img">
+      <img src="./Sign_up-pana.svg" alt="sign Up">
+    </div>
+
+    <div class="box-form">
+
+      <div class="switch">
+        <a href="#" class="login" onclick="login()">Login</a>
+        <a href="#" class="register" onclick="register()">Registre</a>
+        <div class="btn-active" id="btn"></div>
+      </div>
+
+      <div id="register">
+
+        <!-- <div class="box-from-btn">
+          <button>Entrar</button>
+        </div> -->
+
+        <form action="#">
+
+          <h1>Cadastrar</h1>
+
+          <div class="box-input">
+            <label for="#">Digite seu Email:</label>
+            <span>
+              <i class="fi fi-rr-user"></i>
+              <input type="email" name="email" required placeholder="Digite seu Email" required maxlength="35"
+                autocomplete="email">
+            </span>
+
+            <label for="#">Digite sua Senha:</label>
+            <span>
+              <i class="fi fi-rr-lock"></i>
+              <input type="password" name="senha" required placeholder="Digite sua Senha" required minlength="8"
+                maxlength="20">
+            </span>
+
+            <label for="#">Confirme sua Senha:</label>
+            <span>
+              <i class="fi fi-rr-lock"></i>
+              <input type="password" name="confirme-senha" required placeholder="Confirme sua Senha" required
+                minlength="8" maxlength="20">
+            </span>
+          </div>
+
+          <div class="box-from-submit">
+            <button>Cadastrar</button>
+          </div>
+
+        </form>
+
+      </div>
+
+
+    </div>
+
+    <!--------------Login---------------------------------------->
+
+    <div class="box-form-log" id="login">
+
+      <form action="#">
+
+        <h1 id="hlogin">Login</h1>
+
+        <div class="box-input">
+          <label for="#">Digite seu Email:</label>
+          <span>
+            <i class="fi fi-rr-user"></i>
+            <input type="email" name="email" required placeholder="Digite seu Email" required maxlength="35"
+              autocomplete="email">
+          </span>
+
+          <label for="#">Digite sua Senha:</label>
+          <span>
+            <i class="fi fi-rr-lock"></i>
+            <input class="placeholder" type="password" name="senha"
+             required placeholder="Digite sua Senha" required minlength="8"
+              maxlength="20">
+          </span>
+          
+        </div>
+        
+        <div class="box-from-submit">
+          <button>Entrar</button>
+        </div>
+        
+        <div class="box-from-senha">
+          <a>Esqueci minha senha</a>
+        </div>
+
+      </form>
+    </div>
+
+  </main>
+
+</body>
+<script>
+
+    var x = document.getElementById('login');
+    var y = document.getElementById('register');
+    var z = document.getElementById('btn');
+
+    function login(){
+      x.style.left = "530px";
+      y.style.left = "1500px";
+      z.style.left = "199px";
+    }
+    function register(){
+      x.style.left = "1500px";
+      y.style.left = "530px";
+      z.style.left = "320px";
+    }
+
+</script>
+</html>
