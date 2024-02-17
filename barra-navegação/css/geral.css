@@ -9,12 +9,6 @@
   font-family: "Poppins" , sans-serif;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
-  background-color: rgb(245, 245, 255);
-}
-
 #car{
   display: none;
 }
@@ -250,10 +244,6 @@ body {
   background: none;
 }
 
-.sidebar_menu.open ~ .Dashboard_Text{
-  left: 250px;
-  width: calc(100% - 250px);
-}
 
 
 @media (max-width: 420px) {
@@ -263,51 +253,3 @@ body {
 
 }
 
-/* -------------------------------------------------------- */
-
-
-
-
-
-/* Paginas Principais */
-
-.Dashboard_Text{
-  position: relative;
-  display: flex;
-  min-height: 25vh;
-  top: 0;
-  left: 78px;
-  width: calc(100% - 78px);
-  transition: all 0.5s ease;
-  z-index: 2;
-}
-
-.Dashboard_Text .Child_Text{
-  display: inline-block;
-  color: #575757;
-  font-size: 22px;
-  font-weight: 450;
-  margin: 14px;
-}
-
-.container {
-  display: flex;
-  justify-content: space-evenly; 
-}
-
-.elemento {
-  display: inline-block;
-  border-radius: 3px;
-  width: 240px;
-  height: 130px;
-
-  background-color: white;
-  box-shadow: 0px 4px 4px 0px #e8e8f7
-}
-
-.elemento input {
-  width: 35px;
-  border-radius: 10px;
-  font-size: 16px;
-  border: none;
-}

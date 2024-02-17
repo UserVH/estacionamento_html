@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/geral.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="./main.js" defer></script>
   <title>Barra de Navegação</title>
 </head>
@@ -28,7 +29,7 @@
         </li>
       
         <li>
-        <a href="#">
+        <a href="estacionamento.html">
           <i class="fi fi-rr-square-p"></i>
           <span class="Item_Name">Estacinamento</span>
         </a>
@@ -89,14 +90,32 @@
 <!-- Pagina -->
 <section class="Dashboard_Text">
 
-
   <div class="Child_Text">
-    <h1>Hello World</h1>
+    <h1>Dashboard</h1>
   </div>
-
-
-
+  
 </section>
 
+<div class="container"> 
+  <div class="elemento" >
+    <p class="p-um">Total Vagas
+    </p>
+    <label for="itotalvagas"></label>
+    <span><input type="" name="totalvagas" id="itotalvagas" placeholder="0" min="0"></span>
+  </div>
+  <div class="elemento">
+    <p class="p-um">Mensais
+    </p>
+    <label for="imensais"></label>
+      <span><input type="number" name="mensais" id="imensais" placeholder="0" min="0">
+      </span>  
+  </div>
+  <div class="elemento">
+    <p class="p-um">Mensalistas
+    </p>
+    <label for="imensalistas"></label>
+      <span>
+      <input type="number" name="mensalistas" id="imensalistas" placeholder="0" min="0">
+    </span>
 </body>
 </html>
